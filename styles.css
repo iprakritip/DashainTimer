@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('snow.avif');
+    background-image: url('dashain.jpg');
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -18,11 +18,13 @@ body {
  
 }
 h1{
+    font-weight: normal;
     font-size: 4rem;
-    margin-top: -10rem;
+    margin: 15rem 22rem 0 0;
 }
 .countdown-container{
     display: flex;
+    padding: 1rem 22rem 0 0;
 }
 .big-text{
     font-size: 6rem;
