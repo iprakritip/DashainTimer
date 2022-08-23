@@ -24,6 +24,8 @@ h1{
 }
 .countdown-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 1rem 22rem 0 0;
 }
 .big-text{
@@ -39,4 +41,20 @@ h1{
 font-size: 1.5rem;
 }
 
-paused @ 14:36 
+@media only screen and (max-width:450px){
+    body{
+       background-image: url('responsiveDashain.jpg');
+       background-size: cover;
+       height: 100vph;
+    }
+    h1{
+        font-size: 3rem;
+        margin-left: 15rem;
+    }
+    .countdown-container{
+        margin-left: 10rem;
+    }
+    .big-text{
+        font-size: 4rem;
+    }
+}
