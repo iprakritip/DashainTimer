@@ -9,6 +9,8 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     } else if(event.target.value== "teej"){
         festDate= ("30 Aug 2022");
         document.getElementById("festNaam").innerHTML = "Haritalika Teej";
+        // document.getElementsByClassName("description festName big-text").style.color= "white";
+      //  document.querySelectorAll("#festNaam, #days").style.color= white;
     } else if(event.target.value== "dashain"){
         festDate= ("5 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Vijaya Dashami";
@@ -40,7 +42,7 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     console.log(festDate);
 
     document.getElementById('jyan').style.backgroundImage= "url(images/"+event.target.value+".jpg)";
-    // backgroundImage = event.target.value + ".png";
+    
 
 });
 
