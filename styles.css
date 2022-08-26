@@ -24,16 +24,18 @@ margin: 2rem 0 0 2rem;
 text-align: center;
 }
 
-.flag{
-    width: 1rem;
-    height:1rem;
+.jhanda{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin: -3.5rem 0 0 1rem;
 }
-.flag img{
-   max-width: 100%;
+
+.flag{
+    width: 100%;
 }
 
 .dropdown{
-   margin-top:1rem;
+   margin-top:3rem;
     text-align: center;
 
 }
