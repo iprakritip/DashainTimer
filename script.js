@@ -1,16 +1,14 @@
-var festDate= new Date();
+var festDate = new Date();
   
 document.getElementById("festSelector").addEventListener("change",(event)=>{
-//console.log(event.target.value);
-//festDate= "13 Apr 2023";   
+   
     if (event.target.value== "newyear") {
         festDate= ("13 Apr 2023");
         document.getElementById("festNaam").innerHTML = "Happy New Year";
     } else if(event.target.value== "teej"){
         festDate= ("30 Aug 2022");
         document.getElementById("festNaam").innerHTML = "Haritalika Teej";
-        // document.getElementsByClassName("description festName big-text").style.color= "white";
-      //  document.querySelectorAll("#festNaam, #days").style.color= white;
+       
     } else if(event.target.value== "dashain"){
         festDate= ("5 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Vijaya Dashami";
@@ -82,6 +80,10 @@ function formatTime(time){
 }
 
 
+
+
 countdown();
 
 setInterval(countdown,1000);
+
+
