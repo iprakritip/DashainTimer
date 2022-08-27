@@ -1,3 +1,4 @@
+//JS for Festival timer
 var festDate = new Date();
   
 function changeColor(myColor){
