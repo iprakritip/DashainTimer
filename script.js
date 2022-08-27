@@ -20,7 +20,7 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     } else if(event.target.value== "tihar"){
         festDate= ("27 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Bhai Tika";
-       // document.getElementById("heading1").style.color="#fff";
+        changeColor("#fff");
     } else if(event.target.value== "chhath"){
         festDate= ("30 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Chhath Parva";
