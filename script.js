@@ -1,5 +1,9 @@
 var festDate = new Date();
   
+// function changeColor(id){
+//     document.getElementById("id").style.color="#fff";
+// }
+
 document.getElementById("festSelector").addEventListener("change",(event)=>{
    
     if (event.target.value== "newyear") {
@@ -8,13 +12,14 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     } else if(event.target.value== "teej"){
         festDate= ("30 Aug 2022");
         document.getElementById("festNaam").innerHTML = "Haritalika Teej";
-       
+        // changeColor(festNaam);
     } else if(event.target.value== "dashain"){
         festDate= ("5 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Vijaya Dashami";
     } else if(event.target.value== "tihar"){
         festDate= ("27 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Bhai Tika";
+        // document.getElementById("heading1").style.color="#fff";
     } else if(event.target.value== "chhath"){
         festDate= ("30 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Chhath Parva";
@@ -30,6 +35,8 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     }else if(event.target.value== "holi1"){
         festDate= ("6 Mar 2023");
         document.getElementById("festNaam").innerHTML = "Pahad Holi";
+        // document.getElementById("heading1").style.color="#fff";
+
     }else if(event.target.value== "holi2"){
         festDate= ("7 Mar 2023");
         document.getElementById("festNaam").innerHTML = "Terai Holi";
