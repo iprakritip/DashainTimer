@@ -1,25 +1,26 @@
 var festDate = new Date();
   
-// function changeColor(id){
-//     document.getElementById("id").style.color="#fff";
-// }
+function changeColor(myColor){
+    document.getElementById("heading1").style.color=myColor;
+}
 
 document.getElementById("festSelector").addEventListener("change",(event)=>{
    
     if (event.target.value== "newyear") {
         festDate= ("13 Apr 2023");
         document.getElementById("festNaam").innerHTML = "Happy New Year";
+        changeColor("#000");
     } else if(event.target.value== "teej"){
         festDate= ("30 Aug 2022");
         document.getElementById("festNaam").innerHTML = "Haritalika Teej";
-        // changeColor(festNaam);
+        changeColor("#fff");
     } else if(event.target.value== "dashain"){
         festDate= ("5 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Vijaya Dashami";
     } else if(event.target.value== "tihar"){
         festDate= ("27 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Bhai Tika";
-        // document.getElementById("heading1").style.color="#fff";
+       // document.getElementById("heading1").style.color="#fff";
     } else if(event.target.value== "chhath"){
         festDate= ("30 Oct 2022");
         document.getElementById("festNaam").innerHTML = "Chhath Parva";
@@ -43,6 +44,7 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
     }
     else{
         console.log("Please select a festival");
+        changeColor("#000");
     }
     console.log(festDate);
 
