@@ -81,3 +81,17 @@ select{
 font-size: 1.5rem;
 }
 
+@media only screen and (max-width:400px){
+    .jhanda{
+        margin-top:-12rem;
+    }
+    .dropdown{
+        margin-top: 12rem;
+    }
+    .festName{
+        font-size: 3rem;
+    }
+    .big-text{
+        font-size: 4rem;
+    }
+}
