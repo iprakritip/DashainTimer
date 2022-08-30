@@ -1,173 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@300;400;600&family=Sacramento&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height:100vph;
-    width: 100vph;
-    background-color: hsl(0, 0%, 98%); 
-}
-.navbar{
+body {
+    background-image: url('images/first.jpg');
+    background-size: cover;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 2rem 0 2rem;
-}
-.lhs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.lhs ul{
-    display: inline-flex;
-    list-style: none;
-    color:hsl(0, 0%, 41%);
-    margin-left: -8rem;
-}
-.lhs ul li{
-    padding-right: 2rem;
-
-}
-.lhs ul li a:hover{
-    color:hsl(0, 0%, 8%) ;
-}
-.lhs ul li a{
-    text-decoration:none;
-    color:hsl(0, 0%, 41%);
-    font-family: 'Epilogue', sans-serif;
-    font-size: 1rem;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+ 
 }
 
-
-.submenu{
-    display: none;
+.description{
+font-weight: normal;
+margin: 2rem 0 0 2rem;
+text-align: center;
 }
 
-
-.lhs ul li:hover .submenu{
-display: block;
-position: absolute;
-margin-left: 3rem;
-margin-top: 1rem;
-
+.jhanda{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin: -3.5rem 0 0 1rem;
 }
 
-.lhs ul li:hover .submenu ul{
-    display: block;
-    padding: 0.5rem;
-    background-color: #fff;
-    border-radius: 0.8rem;
-    /* box-shadow: 5px 5px -5px -5px #ddd; */
-}
-
-.lhs ul li:hover .submenu ul li{
-    padding: 0.25rem;
-}
-
-/* .navtext{
-    margin-left:-11rem;
-    font-family: 'Epilogue', sans-serif;
-    
-}
-.navtext a{
-    text-decoration: none;
-    color: hsl(0, 0%, 41%);
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.navtext a:hover{
-    color:hsl(0, 0%, 8%) ;
-} */
-
-.rhs a{
-    font-family: 'Epilogue', sans-serif;
-    color:  hsl(0, 0%, 41%);
-    text-decoration: none;
-    padding-right: 3rem;
-   
-}
-
-.rhs a:hover{
-    color:hsl(0, 0%, 8%) ;
-}
-
-.register{
-    font-family: 'Epilogue', sans-serif;
-    font-size: 0.95rem;
-    background-color: hsl(0, 0%, 98%);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    border-width:0.1rem;
-    border-color: hsl(0, 0%, 41%);
-color:  hsl(0, 0%, 41%);
-}
-
-.register:hover {
-    color:hsl(0, 0%, 8%) ;
-    border-color: hsl(0, 0%, 8%);
-}
-
-.midcontainer{
-    margin: 3rem 15rem 0 10rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.bodytext{
-    margin-top: 6rem;
-}
-.bodytext h1{
-    font-family: 'Epilogue', sans-serif;
-    font-weight:900;
-    font-size: 4rem;
-    color: hsl(0, 0%, 8%);
-    /* margin-top: 2rem; */
-}
-.bodytext p{
-    font-size: 18px;
-    font-family: 'Epilogue', sans-serif;
-    margin-top: 3rem;
-    color: hsl(0, 0%, 8%);
-    line-height: 1.5rem;
-    color:  hsl(0, 0%, 41%);
-}
-.learnbtn{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-family: 'Epilogue', sans-serif;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.5rem;
-    border-width:0.1rem;
-    border-color:hsl(0, 0%, 8%);
-    color:hsl(0, 0%, 98%);
-    background-color: hsl(0, 0%, 8%);
-}
-.learnbtn:hover{
-   color: hsl(0, 0%, 8%);
-    background-color: hsl(0, 0%, 98%);
-    font-weight: bold;
-}
-.textimg img{
-padding:0.5rem;
-}
-.bodyimg{
-    width:85%;
-    margin-left: 10rem;
-    
-}
-.bodyimg img{
+.flag{
     width: 100%;
 }
 
+.dropdown{
+   margin-top:3rem;
+    text-align: center;
+
+}
+
+select{
+    padding:0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(225, 225, 225, 0.9);
+}
+ 
 
 
+.festName{
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 13.5rem 0 0 0;
+    text-align: center;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 1rem 22rem 0 0; */
+    text-align: center;
+}
 
+.festName, .countdown-container{
+    background-color:rgba(225, 225, 225, 0.5);;
+}
 
+.big-text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+.countdown-bb{
+    text-align: center;
+}
+.countdown-bb span{
+font-size: 1.5rem;
+}
 
-.attribution{
-    margin-top: 2rem;
-  
+@media only screen and (max-width:400px){
+    .jhanda{
+        margin-top:-12rem;
+    }
+    .dropdown{
+        margin-top: 12rem;
+    }
+    .festName{
+        font-size: 3rem;
+    }
+    .big-text{
+        font-size: 4rem;
+    }
 }
