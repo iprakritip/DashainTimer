@@ -12,19 +12,19 @@ document.getElementById("festSelector").addEventListener("change",(event)=>{
         document.getElementById("festNaam").innerHTML = "Happy New Year";
         changeColor("#fff");
     } else if(event.target.value== "teej"){
-        festDate= ("30 Aug 2022");
+        festDate= ("10 Sep 2023");
         document.getElementById("festNaam").innerHTML = "Haritalika Teej";
         changeColor("#fff");
     } else if(event.target.value== "dashain"){
-        festDate= ("5 Oct 2022");
+        festDate= ("16 Oct 2023");
         document.getElementById("festNaam").innerHTML = "Vijaya Dashami";
         changeColor("#000");
     } else if(event.target.value== "tihar"){
-        festDate= ("27 Oct 2022");
+        festDate= ("6 Nov 2023");
         document.getElementById("festNaam").innerHTML = "Bhai Tika";
         changeColor("#fff");
     } else if(event.target.value== "chhath"){
-        festDate= ("30 Oct 2022");
+        festDate= ("10 Nov 2023");
         document.getElementById("festNaam").innerHTML = "Chhath Parva";
         changeColor("#000");
     } else if(event.target.value== "maghi"){
